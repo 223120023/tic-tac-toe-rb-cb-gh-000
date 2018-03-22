@@ -72,3 +72,14 @@ def current_player(board)
     return "X"
   end
 end
+
+def won?(board)
+  WIN_COMBINATIONS.each do |winCombinationArray|
+    if board[winCombinationArray[1]]==board[winCombinationArray[2]]&&board[winCombinationArray[2]]==board[winCombinationArray[3]]
+      return true
+    else
+      return false
+    end
+  end
+end
+
