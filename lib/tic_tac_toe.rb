@@ -28,3 +28,13 @@ end
 def position_taken?(board,position)
   board[position]=="X"||board[position]=="O"
 end
+
+def valid_move?(board,position)
+  !position_taken?(board,position)
+end
+
+def turn(board,position,player_token)
+  while valid_move?(board,position)
+    move(board,position,player_token)
+  end
+end
