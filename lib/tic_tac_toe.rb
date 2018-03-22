@@ -34,7 +34,11 @@ def position_taken?(board,position)
 end
 
 def valid_move?(board,position)
-  !position_taken?(board,position)
+  if position_taken?(board,position)
+    return false
+  else
+    return true
+  end
 end
 
 def turn(board,position,player_token)
