@@ -43,6 +43,6 @@ def valid_move?(board,position)
   end
 end
 
-def turn(board)
-
+def turn(board,position,player_token)
+  
 end
