@@ -76,7 +76,7 @@ end
 def won?(board)
   WIN_COMBINATIONS.each do |winCombinationArray|
     if board[winCombinationArray[1]]==board[winCombinationArray[2]]&&board[winCombinationArray[2]]==board[winCombinationArray[3]]
-      return true      
+      return true
     end
   end
   return false
