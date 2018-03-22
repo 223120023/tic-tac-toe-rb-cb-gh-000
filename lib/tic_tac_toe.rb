@@ -86,7 +86,7 @@ end
 def full?(board)
   if !won?(board)&&turn_count(board)==9
     return true
-  else 
+  else
     return false
   end
 end
@@ -110,7 +110,7 @@ end
 def winner(board)
   WIN_COMBINATIONS.each do |winCombinationArray|
     winCombinationArray.each do|eachWinCombinationArray|
-      
+
     end
   end
 end
