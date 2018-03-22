@@ -67,20 +67,19 @@ end
 
 def current_player(board)
   if turn_count(board)%2==0
-    return "O"
-  else
     return "X"
+  else
+    return "O"
   end
 end
 
 def won?(board)
   WIN_COMBINATIONS.each do |winCombinationArray|
     if board[winCombinationArray[1]]==board[winCombinationArray[2]]&&board[winCombinationArray[2]]==board[winCombinationArray[3]]
-      return true
-    else
-      return false
+      return true      
     end
   end
+  return false
 end
 
 def full?(board)
