@@ -26,7 +26,11 @@ def move(board,position,player_token)
 end
 
 def position_taken?(board,position)
-  board[position]=="X"||board[position]=="O"
+  if board[position]=="X"||board[position]=="O"
+    return true
+  else
+    return false
+  end
 end
 
 def valid_move?(board,position)
