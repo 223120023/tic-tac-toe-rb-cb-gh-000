@@ -45,6 +45,9 @@ end
 
 def turn(board,position,player_token)
   while valid_move?(board,position)
-    move(board,position,player_token)
+    puts "please type your input again : "
+    input=gets
+    position=input_to_index(input)
   end
+  move(board,position,player_token)
 end
