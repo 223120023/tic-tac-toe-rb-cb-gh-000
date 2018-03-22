@@ -44,5 +44,13 @@ def valid_move?(board,position)
 end
 
 def turn(board)
-
+  puts "input your number : "
+  input=gets
+  position=input_to_index(input)
+  if valid_move?(board,position)
+    move(board,position,"X")
+    display_board(board)
+  else
+    turn(board)
+  end
 end
